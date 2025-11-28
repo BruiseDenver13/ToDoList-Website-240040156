@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">  
+<head>  
+    <meta charset="UTF-8">  
+    <title>Aplikasi To-Do List</title>  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="style.css">  
+</head>  
+<body>  
+
+<header class="site-header">  
+    <h1>Aplikasi To-Do List</h1>  
+    <p class="subtitle">Tambahkan tugas, tandai selesai, dan hapus jika sudah tidak diperlukan.</p>  
+</header>  
+
+<main class="site-main">  
+
+    <section class="card">  
+        <h2>Tambah Tugas Baru</h2>  
+
+        <form id="todo-form" class="todo-form">  
+            <input type="text" id="todo-input" placeholder="Tulis nama tugas...">  
+            <button type="submit">Tambah</button>  
+        </form>  
+
+        <p id="error-message" class="error-message"></p>  
+    </section>  
+
+    <section class="card">  
+        <h2>Daftar Tugas</h2>  
+
+        <ul id="todo-list" class="todo-list">  
+            <li class="todo-item">  
+                <span class="todo-text">Contoh tugas pertama</span>  
+                <div class="todo-actions">  
+                    <button class="btn-complete">Selesai</button>  
+                    <button class="btn-delete">Hapus</button>  
+                </div>  
+            </li>  
+        </ul>  
+    </section>  
+
+</main>  
+
+<footer class="site-footer">  
+    <small>Tugas To - Do List 240040156</small>  
+</footer>  
+
+<script src="script.js"></script>
+
+</body>  
+</html>
