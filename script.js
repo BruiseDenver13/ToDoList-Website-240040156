@@ -43,3 +43,23 @@ form.addEventListener("submit", function (event) {
 
     input.value = "";
 });
+
+list.addEventListener("click", function (event) {
+    const target = event.target;
+
+    if (target.classList.contains("btn-complete")) {
+        const confirmDone = confirm("Tandai tugas ini sebagai selesai?");
+        if (!confirmDone) return;
+
+        const item = target.closest(".todo-item");
+        item.classList.toggle("completed");
+    }
+
+    if (target.classList.contains("btn-delete")) {
+        const confirmDelete = confirm("Yakin tugas ini dihapus?");
+        if (!confirmDelete) return;
+
+        const item = target.closest(".todo-item");
+        item.remove();
+    }
+});
